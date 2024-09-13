@@ -1,22 +1,32 @@
 import React from 'react';
-import { createStackNavigation } from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import IncomeScreen from '../screens/IncomeScreen';
+import IncomesScreen from '../screens/IncomesScreen';
 import ExpensesScreen from '../screens/ExpensesScreen';
-import ComparisonScreen from '../screens/ComparisonScreen';
+import ResultsScreen from '../screens/ResultsScreen';
 
-const Stack = createStackNavigation();
-
-const StackNavigator = () => {
+const Stack = createStackNavigator();
+function StackNavigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Income">
-        <Stack.Screen name="Income" component={IncomeScreen} />
-        <Stack.Screen name="Expenses" component={ExpensesScreen} />
-        <Stack.Screen name="Comparison" component={ComparisonScreen} />
+      <Stack.Navigator initialRouteName="IncomesScreen">
+        <Stack.Screen 
+          name="IncomesScreen" 
+          component={IncomesScreen} 
+          options={{ title: 'Ingresos' }}
+        />
+        <Stack.Screen 
+          name="ExpensesScreen" 
+          component={ExpensesScreen} 
+          options={{ title: 'Egresos' }}
+        />
+        <Stack.Screen 
+          name="ResultsScreen" 
+          component={ResultsScreen} 
+          options={{ title: 'Comparación de Ingresos vs Egresos' }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
-};
-
+}
 export default StackNavigation;

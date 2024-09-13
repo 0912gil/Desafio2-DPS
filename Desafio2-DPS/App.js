@@ -3,14 +3,16 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigation } from '@react-navigation/stack';
 import HomeScreen from './src/screens/HomeScreen';
 import IncomesScreen from './src/screens/IncomesScreen';
 import ExpensesScreen from './src/screens/ExpensesScreen';
 import ResultsScreen from './src/screens/ResultsScreen';
+import StackNavigation from './src/navigation/StackNavigation';
+
 
 const Tab = createBottomTabNavigator();
-const Stack = createStackNavigator();
+const Stack = createStackNavigation();
 
 function FinancialNavigator() {
   return (
@@ -31,4 +33,6 @@ export default function App() {
       </Tab.Navigator>
     </NavigationContainer>
   );
+  return <StackNavigation />;
 }
+
