@@ -1,19 +1,19 @@
 import React from 'react';
-import ExpenseForm from '../components/ExpenseForm';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, Button } from 'react-native';
 
-export default function ExpensesScreen({ navigation }) {
+function ExpensesScreen({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Text>Ingreso de Egresos</Text>
-      {/* Aquí agregarías tu formulario de egresos */}
-      <Button 
-        title="Ver Resultados"
+    <View>
+      <Text>Pantalla de Egresos</Text>
+      <Button
+        title="Ver Comparación"
         onPress={() => navigation.navigate('ResultsScreen')}
       />
     </View>
   );
 }
+
+export default ExpensesScreen;
 
 const styles = StyleSheet.create({
   container: {

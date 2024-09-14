@@ -1,19 +1,19 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
-import IncomeForm from '../components/IncomeForm';
+import { View, Text, Button } from 'react-native';
 
-export default function IncomesScreen({ navigation }) {
+function IncomesScreen({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Text>Ingreso de Ingresos</Text>
-      {/* Aquí agregarías tu formulario de ingresos */}
-      <Button 
-        title="Siguiente: Egresos"
+    <View>
+      <Text>Pantalla de Ingresos</Text>
+      <Button
+        title="Ir a Egresos"
         onPress={() => navigation.navigate('ExpensesScreen')}
       />
     </View>
   );
 }
+
+export default IncomesScreen;
 
 const styles = StyleSheet.create({
   container: {
