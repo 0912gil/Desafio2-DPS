@@ -1,15 +1,15 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import ComparisonChart from '../components/ComparisonChart';
+import { View, Text } from 'react-native';
 
-export default function ResultsScreen() {
+function ResultsScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Resultados</Text>
-      <ComparisonChart />
+    <View>
+      <Text>Comparación de Ingresos vs Egresos</Text>
     </View>
   );
 }
+
+export default ResultsScreen;
 
 const styles = StyleSheet.create({
   container: {
