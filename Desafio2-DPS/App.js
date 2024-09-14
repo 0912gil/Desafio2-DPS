@@ -12,7 +12,7 @@ import StackNavigation from './src/navigation/StackNavigation';
 
 
 const Tab = createBottomTabNavigator();
-const Stack = createStackNavigation();
+//const Stack = createStackNavigation();
 
 function FinancialNavigator() {
   return (
