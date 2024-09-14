@@ -6,7 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="5fd453c5-c001-4268-aa09-e3126adc00c3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.expo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/assets/adaptive-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/assets/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/assets/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/src/components/ComparisonChart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/src/components/ExpenseForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/src/components/IncomeForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/src/navigation/StackNavigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/src/screens/ExpensesScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/src/screens/HomeScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/src/screens/IncomesScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desafio2-DPS/src/screens/ResultsScreen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
