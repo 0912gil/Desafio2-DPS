@@ -1,20 +1,32 @@
+import 'react-native-gesture-handler'; 
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigation } from '@react-navigation/stack';
+import HomeScreen from './src/screens/HomeScreen';
+import IncomesScreen from './src/screens/IncomesScreen';
+import ExpensesScreen from './src/screens/ExpensesScreen';
+import ResultsScreen from './src/screens/ResultsScreen';
+import StackNavigation from './src/navigation/StackNavigation';
 
-export default function App() {
+
+const Tab = createBottomTabNavigator();
+//const Stack = createStackNavigation();
+
+function FinancialNavigator() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Stack.Navigator initialRouteName="Incomes">
+      <Stack.Screen name="Incomes" component={IncomesScreen} />
+      <Stack.Screen name="Expenses" component={ExpensesScreen} />
+      <Stack.Screen name="Results" component={ResultsScreen} />
+    </Stack.Navigator>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default function App() {
+
+  return <StackNavigation />;
+}
+
